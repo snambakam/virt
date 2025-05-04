@@ -14,10 +14,13 @@
 #  * limitations under the License.
 #  */
 
-.PHONY: bootstrap
+bin_PROGRAMS = virt
 
-bootstrap:
-	autoreconf -vif ..
-	../configure \
-		--prefix /usr
+virt_CFLAGS = \
+    -I@top_srcdir@/include
+    -I@top_srcdir@/common/include
 
+virt_SOURCES = main.c
+
+virt_LIBADD = \
+    @top_builddir@/common/libcommon.la

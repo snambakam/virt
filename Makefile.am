@@ -14,10 +14,5 @@
 #  * limitations under the License.
 #  */
 
-.PHONY: bootstrap
-
-bootstrap:
-	autoreconf -vif ..
-	../configure \
-		--prefix /usr
+SUBDIRS = src
 

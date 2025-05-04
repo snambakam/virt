@@ -14,10 +14,10 @@
 #  * limitations under the License.
 #  */
 
-.PHONY: bootstrap
+noinst_LIBRARIES = libcommon.a
 
-bootstrap:
-	autoreconf -vif ..
-	../configure \
-		--prefix /usr
+libcommon_a_CFLAGS = \
+    -I@top_srcdir@/include
 
+libcommon_a_SOURCES = \
+    libmain.c
