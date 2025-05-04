@@ -14,10 +14,11 @@
 #  * limitations under the License.
 #  */
 
-noinst_LIBRARIES = libcommon.a
+noinst_LTLIBRARIES = libcommon.la
 
-libcommon_a_CFLAGS = \
-    -I@top_srcdir@/include
+libcommon_la_CPPFLAGS = \
+    -I$(top_srcdir)/src/include
 
-libcommon_a_SOURCES = \
+libcommon_la_SOURCES = \
     libmain.c
+

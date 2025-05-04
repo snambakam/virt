@@ -16,11 +16,11 @@
 
 bin_PROGRAMS = virt
 
-virt_CFLAGS = \
-    -I@top_srcdir@/include
-    -I@top_srcdir@/common/include
+virt_CPPFLAGS = \
+    -I$(top_srcdir)/src/include \
+    -I$(top_srcdir)/src/common/include
 
 virt_SOURCES = main.c
 
-virt_LIBADD = \
-    @top_builddir@/common/libcommon.la
+virt_LDADD = \
+    $(top_builddir)/src/common/libcommon.la

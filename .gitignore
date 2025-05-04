@@ -54,3 +54,6 @@ config.log
 config.status
 config.h.in~
 configure~
+libtool
+build/config.h.in
+build/src

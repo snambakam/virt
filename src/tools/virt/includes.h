@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
- #include <config.h>
- #include <virtcommon.h>
+#include <config.h>
+#include <virtsys.h>
+#include <virtcommon.h>
  

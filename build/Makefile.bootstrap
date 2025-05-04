@@ -18,6 +18,5 @@
 
 bootstrap:
 	autoreconf -vif ..
-	../configure \
-		--prefix /usr
+	../configure
 

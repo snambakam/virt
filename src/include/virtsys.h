@@ -17,4 +17,12 @@
  #ifndef __VIRTSYS_H__
  #define __VIRTSYS_H__
 
+ #ifdef HAVE_STDLIB_H
+ #include <stdlib.h>
+ #endif
+
+ #ifdef HAVE_STDINT_H
+ #include <stdint.h>
+ #endif
+
  #endif /* __VIRTSYS_H__ */

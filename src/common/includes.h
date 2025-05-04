@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
- #include <config.h>
- 
+#include <config.h>
+#include <virtsys.h>
